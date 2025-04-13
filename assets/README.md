@@ -122,10 +122,13 @@ LEFT JOIN
     dbo.geography AS g
 ON 
     c.GeographyID = g.GeographyID;
-```  <!-- this closes the code block -->
+```
+
 
 📸 *Result Screenshot:*  
 ![Customer Enrichment Result](./images/customer_enrichment.png)
+
+---
 
 ### ✅ 2. Product Price Categorization
 
@@ -143,7 +146,7 @@ SELECT
     END AS PriceCategory
 FROM 
     dbo.products;
-```  <!-- this closes the code block -->
+```  
 
 📸 *Result Screenshot:*  
 ![Customer Enrichment Result](./images/customer_enrichment.png)
@@ -181,8 +184,7 @@ FROM (
     FROM dbo.customer_journey
 ) AS subquery
 WHERE row_num = 1;
-```  <!-- this closes the code block -->
-
+```  
 📸 *Result Screenshot:*  
 ![Customer Enrichment Result](./images/customer_enrichment.png)
 
@@ -202,7 +204,8 @@ SELECT
     Rating,
     REPLACE(ReviewText, '  ', ' ') AS ReviewText
 FROM dbo.customer_reviews;
-```  <!-- this closes the code block -->
+
+```
 
 📸 *Result Screenshot:*  
 ![Customer Enrichment Result](./images/customer_enrichment.png)
@@ -214,9 +217,9 @@ FROM dbo.customer_reviews;
 
 We cleaned and formatted the `engagement_data` table by:
 - Fixing inconsistent `ContentType` values
-- Splitting `ViewsClicksCombined` into two columns
-- Formatting the engagement date
-- Filtering out newsletter entries
+- Splitting `ViewsClicksCombined` into separate `Views` and `Clicks`
+- Formatting the `EngagementDate` into `dd.MM.yyyy`
+- Filtering out irrelevant content types (e.g., Newsletters)
 
 ```sql
 SELECT 
@@ -231,8 +234,6 @@ SELECT
     FORMAT(CONVERT(DATE, EngagementDate), 'dd.MM.yyyy') AS EngagementDate
 FROM dbo.engagement_data
 WHERE ContentType != 'Newsletter';
-```  <!-- this closes the code block -->
-
+```
 📸 *Result Screenshot:*  
 ![Customer Enrichment Result](./images/customer_enrichment.png)
-
