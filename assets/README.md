@@ -129,9 +129,6 @@ ON
 
 ### ✅ 2. Product Price Categorization
 
-```markdown
-### 2. 🛍️ Product Price Categorization
-
 We used a `CASE` statement to categorize products into `Low`, `Medium`, and `High` based on their price.
 
 ```sql
@@ -156,9 +153,6 @@ FROM
 ---
 
 ### ✅ 3. Remove Duplicates in Customer Journey
-
-```markdown
-### 3. 🔁 Remove Duplicates in Customer Journey
 
 We used a CTE with `ROW_NUMBER()` to remove duplicate rows and filled missing `Duration` values using the average duration for each date.
 
@@ -197,9 +191,6 @@ WHERE row_num = 1;
 
 ### ✅ 4. Review Text Cleanup
 
-```markdown
-### 4. ✍️ Review Text Cleanup
-
 We standardized the review text by replacing double spaces with single spaces.
 
 ```sql
@@ -220,9 +211,6 @@ FROM dbo.customer_reviews;
 ---
 
 ### ✅ 5. Engagement Data Formatting
-
-```markdown
-### 5. 📺 Engagement Data Formatting
 
 We cleaned and formatted the `engagement_data` table by:
 - Fixing inconsistent `ContentType` values
