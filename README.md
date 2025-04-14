@@ -237,3 +237,86 @@ WHERE ContentType != 'Newsletter';
 ```
 📸 *Result Screenshot:*  
 ![Customer Enrichment Result](./images/customer_enrichment.png)
+
+## 🧠 Sentiment Analysis with Python
+
+We performed sentiment analysis on the customer reviews using **NLTK’s VADER Sentiment Analyzer** in Python. The goal was to understand customer sentiment beyond numeric ratings by analyzing review text.
+
+---
+
+### 🔍 What We Did:
+- Computed compound sentiment scores for each review
+- Categorized sentiment using both the score and customer rating
+- Created sentiment buckets for better emotional grouping
+
+📄 **Script Location**:  
+[`customer_reviews_enrichment.py`](./python_sentiment_analysis_and_calendar_dax_script/customer_reviews_enrichment.py)
+
+---
+
+📸 *Result Screenshot:*  
+![Sentiment Analysis Output](./images/sentiment_analysis_output.png)
+
+## 📊 Dashboard Development (Power BI)
+
+We created an interactive dashboard in **Power BI** to help stakeholders visualize and explore key performance indicators (KPIs) related to YouTube marketing performance.
+
+The dashboard answers critical business questions, such as:
+- Who are the top-performing YouTubers?
+- What are their engagement rates?
+- How do views, subscribers, and uploads relate to one another?
+
+---
+
+📄 **Dashboard File**:  
+[`Dashboard.pbix`](./dashboard_file/Dashboard.pbix)
+
+---
+
+📸 *Dashboard Preview:*  
+![Power BI Dashboard](./images/top_uk_youtubers_2024.gif)
+
+## 💡 Insights & Recommendations
+
+We concluded this analysis with a strategic focus on improving three core metrics: conversion rates, customer engagement, and customer feedback scores.
+
+📄 **Full Insight Presentation**:  
+[Marketing Insights & Recommendations (PPTX)](./docs/Marketing_Insights_ShopEasy.pptx)
+
+---
+
+### 🎯 1. Increase Conversion Rates
+
+- **Goal**: Identify friction points in the funnel and provide actionable ways to improve conversions.
+- **Insight**: Drop-off rates are highest at product pages and cart abandonment stages.
+- **Action**: 
+  - **Target High-Performing Products**: Focus on converting traffic for categories like *Kayaks*, *Ski Boots*, and *Baseball Gloves*.
+  - **Use Seasonal Campaigns**: Promote during high-conversion months (e.g., January, September).
+  - **Implement Personalized Campaigns**: Based on past user activity and reviews.
+
+---
+
+### 📈 2. Enhance Customer Engagement
+
+- **Goal**: Determine what types of content generate the highest engagement across platforms.
+- **Insight**: Engagement is low in Q4 (September–December); video content and blog CTAs underperform.
+- **Action**:
+  - **Revitalize Content Strategy**: Introduce **interactive videos**, polls, and **user-generated content**.
+  - **Optimize CTAs**: Test CTA placement across blog posts and social media during low-engagement months.
+
+---
+
+### 💬 3. Improve Customer Feedback Scores
+
+- **Goal**: Uncover review themes and improve overall satisfaction scores.
+- **Insight**: Mixed reviews highlight recurring issues like delivery delays and unclear pricing.
+- **Action**:
+  - **Establish Feedback Loop**: Regularly analyze negative reviews and resolve underlying issues.
+  - **Follow-Up with Dissatisfied Customers**: Encourage issue resolution + re-rating to raise the average toward the 4.0 benchmark.
+
+---
+
+📸 *Visual Snapshot from Insights Slide:*  
+![Insight Visual](./images/insight_summary_slide.png)
+
+
