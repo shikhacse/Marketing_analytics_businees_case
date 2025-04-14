@@ -24,11 +24,11 @@ This project is organized into the following folders:
 
 | Folder | Description |
 |--------|-------------|
-| [`docs/`](./docs) | Contains the full project brief and stakeholder presentation (`.pptx`) |
-| [`sql_queries/`](./sql_queries) | SQL scripts for data cleaning, transformation, and validation |
-| [`datasets/`](./datasets) | Raw and processed datasets used throughout the project (`.xlsx`, `.csv`) |
-| [`python_sentiment_analysis_and_calendar_dax_script/`](./python_sentiment_analysis_and_calendar_dax_script) | Python script for sentiment analysis and a reusable DAX calendar script |
-| [`dashboard_file/`](./dashboard_file) | Final Power BI dashboard file (`.pbix`) for visual insights |
+| [`docs/`](assets/docs) | Contains the full project brief and stakeholder presentation (`.pptx`) |
+| [`sql_queries/`](assets/sql_queries) | SQL scripts for data cleaning, transformation, and validation |
+| [`datasets/`](assets/datasets) | Raw and processed datasets used throughout the project (`.xlsx`, `.csv`) |
+| [`python_sentiment_analysis_and_calendar_dax_script/`](assets/python_sentiment_analysis_and_calendar_dax_script) | Python script for sentiment analysis and a reusable DAX calendar script |
+| [`dashboard_file/`](assets/dashboard_file) | Final Power BI dashboard file (`.pbix`) for visual insights |
 
 Each folder aligns with a specific project phase — from data wrangling to stakeholder-ready visualization.
 
@@ -91,7 +91,7 @@ This project follows a structured data analytics lifecycle:
 
 The dataset was restored from a SQL Server backup file:
 
-📂 [`PortfolioProject_MarketingAnalytics.bak`](./datasets/PortfolioProject_MarketingAnalytics.bak)
+📂 [`PortfolioProject_MarketingAnalytics.bak`](assets/datasets/PortfolioProject_MarketingAnalytics.bak)
 
 This includes several normalized tables such as:
 - `customers`
@@ -126,7 +126,7 @@ ON
 
 
 📸 *Result Screenshot:*  
-![Customer Enrichment Result](./images/customer_enrichment.png)
+![Customer Enrichment Result](assets/images/cust_geo_combined.PNG)
 
 ---
 
@@ -149,7 +149,7 @@ FROM
 ```  
 
 📸 *Result Screenshot:*  
-![Customer Enrichment Result](./images/customer_enrichment.png)
+![Customer Enrichment Result](assets/images/Product.PNG)
 
 
 
@@ -186,7 +186,7 @@ FROM (
 WHERE row_num = 1;
 ```  
 📸 *Result Screenshot:*  
-![Customer Enrichment Result](./images/customer_enrichment.png)
+![Customer Enrichment Result](assets/images/cust_journy.PNG)
 
 
 ---
@@ -208,7 +208,7 @@ FROM dbo.customer_reviews;
 ```
 
 📸 *Result Screenshot:*  
-![Customer Enrichment Result](./images/customer_enrichment.png)
+![Customer Enrichment Result](assets/images/cust_review.PNG)
 
 
 ---
@@ -236,7 +236,7 @@ FROM dbo.engagement_data
 WHERE ContentType != 'Newsletter';
 ```
 📸 *Result Screenshot:*  
-![Customer Enrichment Result](./images/customer_enrichment.png)
+![Customer Enrichment Result](assets/images/engagement.PNG)
 
 ## 🧠 Sentiment Analysis with Python
 
@@ -250,12 +250,10 @@ We performed sentiment analysis on the customer reviews using **NLTK’s VADER S
 - Created sentiment buckets for better emotional grouping
 
 📄 **Script Location**:  
-[`customer_reviews_enrichment.py`](./python_sentiment_analysis_and_calendar_dax_script/customer_reviews_enrichment.py)
+[`customer_reviews_enrichment.py`](assets/python_sentiment_anaysis_and_calendar_dax_script/customer_reviews_enrichment.py)
 
 ---
 
-📸 *Result Screenshot:*  
-![Sentiment Analysis Output](./images/sentiment_analysis_output.png)
 
 ## 📊 Dashboard Development (Power BI)
 
@@ -269,19 +267,16 @@ The dashboard answers critical business questions, such as:
 ---
 
 📄 **Dashboard File**:  
-[`Dashboard.pbix`](./dashboard_file/Dashboard.pbix)
+[`Dashboard.pbix`](assets/dashboard_file/Dashboard.pbix)
 
 ---
-
-📸 *Dashboard Preview:*  
-![Power BI Dashboard](./images/top_uk_youtubers_2024.gif)
 
 ## 💡 Insights & Recommendations
 
 We concluded this analysis with a strategic focus on improving three core metrics: conversion rates, customer engagement, and customer feedback scores.
 
 📄 **Full Insight Presentation**:  
-[Marketing Insights & Recommendations (PPTX)](./docs/Marketing_Insights_ShopEasy.pptx)
+[Marketing Insights & Recommendations (PPTX)](assets/docs/Presentation_Example.pptx)
 
 ---
 
@@ -316,7 +311,6 @@ We concluded this analysis with a strategic focus on improving three core metric
 
 ---
 
-📸 *Visual Snapshot from Insights Slide:*  
-![Insight Visual](./images/insight_summary_slide.png)
+
 
 
