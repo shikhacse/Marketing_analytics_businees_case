@@ -9,7 +9,7 @@ ShopEasy, an online retail company, has launched multiple digital marketing camp
 > - Customer engagement trends
 > - Customer review sentiment
 
-🔗 **[View the full business case presentation here](./docs/Marketing_Analytics_Business_Case_ShopEasy.pptx)**
+🔗 **[View the full business case presentation here](.assets/docs/Marketing Analytics Business Case (Clean).pptx)**
 
 ---
 
