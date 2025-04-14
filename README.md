@@ -1,4 +1,4 @@
-# 📊 Data Analyst Portfolio: ShopEasy Marketing Optimization Project (2024)
+# 📊 Data Analyst Portfolio: ShopEasy Marketing Optimization Project
 
 ## 🧠 Business Problem Overview
 
